@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    font-size: 14px;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 38%, 92%);
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    width: 530px;
+    height: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cover {
+    width: 50%;
+    height: 100%;
+    background-image: url("images/image-product-desktop.jpg");
+    background-size: cover;
+}
+
+main section {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    padding: 25px;
+    background-color: white;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+main section > span {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+main section h2 {
+    font-family: 'Fraunces', serif;
+    color: hsl(212, 21%, 14%);
+    font-size: 30px;
+    line-height: 28px;
+}
+
+main section p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500px;
+    font-size: 13px;
+    color: hsl(228, 12%, 48%);
+}
+
+main section .price {
+   display: flex;
+   align-items: center;
+}
+
+main section .price span:first-child {
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    font-size: 30px;
+}
+
+main section .price span:last-child {
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    margin-left: 15px;
+    font-size: 12px;
+}
+
+main section button {
+    width: 100%;
+    padding: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700px;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    border-radius: 6px;
+    border: none;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+main section button:hover {
+    background-color: hsl(158deg 38% 18%);;
+    cursor: pointer;
+}
+
+main section button svg {
+    position: relative;
+    bottom: -3px;
+    right: 4px;
+}
+
+@media (max-width : 568px) {
+    main {
+        display: flex;
+        width: 325px;
+        height: 560px;
+        flex-direction: column;
+    }
+
+    .cover {
+        width: 100%;
+        height: 73%;
+        background-image: url("images/image-product-mobile.jpg");
+    }
+    
+    main section {
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+footer {
+    margin: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    color: hsl(228, 12%, 48%);
+    text-align: center;
+}
+
+footer a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+    color: hsl(158, 36%, 37%);
+    transition: 0.3s;
+}
